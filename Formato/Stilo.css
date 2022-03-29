@@ -1,0 +1,43 @@
+*{
+    font-family: sans-serif;
+}
+
+.menu1{
+    width: 20%;
+    background-color: black;
+    
+    height: 100%;
+    position: absolute;
+}
+
+.div1{
+    height: 25%;
+    background-color: aqua;
+    width: 80%;
+    padding-left: 20%;
+    position:static;
+}
+
+.div2{
+    height: 25%;
+    background-color: rgb(226, 247, 40);
+    width: 80%;
+    padding-left: 20%;
+    margin-top: -21px;
+}
+
+.div3{
+    height: 25%;
+    background-color: rgb(228, 154, 17);
+    width: 80%;
+    padding-left: 20%;
+    margin-top: -21px;
+}
+
+.div4{
+    height: 25%;
+    background-color: rgb(250, 78, 10);
+    width: 80%;
+    padding-left: 20%;
+    margin-top: -21px;
+}
