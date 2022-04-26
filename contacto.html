@@ -1,104 +1,127 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
-    
 
-        <!-- Bootstrap CSS -->
-        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
         integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-        <title>Ayuda a los Perritos</title>
+    <title>Ayuda a los Perritos</title>
 
 </head>
+
 <body>
 
-<h1 align="center">Formulario Contacto</h1>
+    <h1 align="center">Formulario Contacto</h1>
 
-<div class="container">
-    <form name="contacto_form" action="#" method="POST">
-        <div class="form-group row">
-            <label for="NombreCliente" name="" class="col-sm-2 col-form-label">Nombre Completo Cliente</label>
-            <div class="col-sm-10">
-                <input type="text" class="form-control" id="NombreCliente" name="NombreCliente" placeholder="Juan Perez...">
+    <div class="container">
+        <form action="#" method="post" name="registrarDatos" id="registrarDatos">
+            <div id="resultadoValidacion">
             </div>
-        </div>
-        <br>
-        <div class="form-group row">
-            <label for="Email" class="col-sm-2 col-form-label">Email</label>
-            <div class="col-sm-10">
-                <input type="email" class="form-control" id="Email" placeholder="juan@gmail.com">
+            <div class="form-group row">
+                <label for="NombreCliente" name="" class="col-sm-2 col-form-label">Nombre Completo Cliente</label>
+                <div class="col-sm-10">
+                    <input type="text" class="form-control" id="NombreCliente" name="NombreCliente"
+                        placeholder="Juan Perez...">
+                </div>
             </div>
-        </div>
-        <br>
-        <div class="form-check form-check-inline">
-            <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
-            <label class="form-check-label" for="flexRadioDefault1">
-              Rut
-            </label>
-        </div>
-        <div class="form-check form-check-inline">
-            <input class="form-check-input" type="radio" name="flexRadioDefault2" id="flexRadioDefault2">
-            <label class="form-check-label" for="flexRadioDefault2">
-              Pasaporte
-            </label>
-          </div>
-          <br>
-          <br>
-        <div class="form-group row">
-            <label for="RutCliente" class="col-sm-2 col-form-label">Rut Cliente</label>
-            <div class="col-sm-10">
-                <input type="text" class="form-control" id="RutCliente" placeholder="17860190-3">
+            <br>
+            <div class="form-group row">
+                <label for="Email" class="col-sm-2 col-form-label">Email</label>
+                <div class="col-sm-10">
+                    <input type="email" class="form-control" id="Email" name="Email" placeholder="juan@gmail.com">
+                </div>
             </div>
-        </div>
-        <br>
-        <div class="form-group row">
-            <label for="telefono" class="col-sm-2 col-form-label">Telefono</label>
-            <div class="col-sm-10">
-                <input type="text" class="form-control" id="telefono" placeholder="969055485">
+            <br>
+            <div class="form-check form-check-inline">
+                <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                <label class="form-check-label" for="flexRadioDefault1">
+                    Rut
+                </label>
             </div>
-        </div>
-        <br>
-        <div class="form-group row">
-            <label for="ciudad" class="col-sm-2 col-form-label">ciudad</label>
-            <div class="col-sm-10">
-                <input type="text" class="form-control" id="ciudad" placeholder="Santiago">
+            <div class="form-check form-check-inline">
+                <input class="form-check-input" type="radio" name="flexRadioDefault2" id="flexRadioDefault2">
+                <label class="form-check-label" for="flexRadioDefault2">
+                    Pasaporte
+                </label>
             </div>
-        </div>
-       
-        <br>
+            <br>
+            <br>
+            <div class="form-group row">
+                <label for="RutCliente" class="col-sm-2 col-form-label" id="labeltext" name="labeltext">Rut
+                    Cliente</label>
+                <div class="col-sm-9">
+                    <input type="text" class="form-control" id="RutCliente" name="RutCliente" placeholder="17860190">
+                </div>
+                <hr>
+                <div class="col-sm-1">
+                    <input type="text" class="form-control" name="DvCliente" id="DvCliente" placeholder="1">
+                </div>
+            </div>
+            <br>
+            <div class="form-group row">
+                <label for="telefono" class="col-sm-2 col-form-label">Telefono</label>
+                <div class="col-sm-10">
+                    <input type="text" class="form-control" name="telefono" id="telefono" placeholder="969055485">
+                </div>
+            </div>
+            <br>
+            <div class="form-group row">
+                <label for="ciudad" class="col-sm-2 col-form-label">ciudad</label>
+                <div class="col-sm-10">
+                    <input type="text" class="form-control" id="ciudad" name="ciudad" placeholder="Santiago">
+                </div>
+            </div>
 
-        <div class="row float-right">
-
-            <div class="col-sm-4 col">
-                <button type="button" class="btn btn-primary btn-sm">Enviar</button>
+            <br>
+            <div class="form-inline">
+                <label class="col-sm-2 col-form-label" for="textAreaComentario">Comentario</label>
+                <textarea class="col-sm-10 form-control" name="textAreaComentario1" id="textAreaComentario1" minlength="3" rows="4"></textarea>
             </div>
-            <div class="col-sm-4 col">
-                <button type="reset" class="btn btn-primary btn-sm">limpiar</button>
+
+            <br>
+
+            <div class="row float-right">
+
+                <div class="col-sm-4 col">
+                    <button type="submit" class="btn btn-primary btn-sm">Enviar</button>
+                </div>
+                <div class="col-sm-4 col">
+                    <button type="reset" class="btn btn-primary btn-sm">limpiar</button>
+                </div>
             </div>
-        </div>
 
-    </form>
-</div>
+        </form>
+    </div>
 
-   <!-- Optional JavaScript; choose one of the two! -->
+    <script src="https://code.jquery.com/jquery-3.6.0.js">
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/validate-js/2.0.1/validate.min.js"
+        integrity="sha256-FtvY52LIDZ2/QHmDNay6PTYvLlRsZICHak0iJEAIBuM=" crossorigin="anonymous"></script>
+
+
+    <script src="js/valida.js"></script>
+    <!-- Optional JavaScript; choose one of the two! -->
 
     <!-- Option 1: Bootstrap Bundle with Popper -->
 
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+    <!-- <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
         integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous">
-    </script>
+    </script> -->
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
         integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous">
     </script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
         integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous">
     </script>
+    <!-- <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script> -->
 
-    <script src="//cdnjs.cloudflare.com/ajax/libs/validate.js/0.13.1/validate.min.js"></script>
-    <script src="js/valida.js"></script>
+
 </body>
-</html>
 
+</html>
